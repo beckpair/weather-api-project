@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script type='text/javascript' src='config.js'></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <form class="text-center" name="weatherData" id="weatherDataForm">
+            <input type="text" name="city" placeholder="Enter your city here" id="city">
+            <button type="submit" id="submitButton" onclick="load_data()">Get Weather</button>
+        </form>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <section class="list-group current-weather mt-3"> 
+                </section> 
+            </div>
+        </div>
+    </div>
+</body>
